@@ -9,12 +9,12 @@ import urllib.parse
 class ProductOutputPredictor:
     def __init__(self):
 
-        password = '0xVL}]LGr?+M'
+        password = ')JNeW];ME6L_'
         escaped_password = urllib.parse.quote(password)
 
         # Formando la URL de conexión
         self.engine = sqlalchemy.create_engine(
-            f'mysql+pymysql://firetens_prueba:{escaped_password}@firetensor.com:3306/firetens_fratello_bd')
+            f'mysql+pymysql://eduardod_admin:{escaped_password}@148.113.194.3:3306/eduardod_apiLaravel')
 
     def load_product_data(self):
         query = """
